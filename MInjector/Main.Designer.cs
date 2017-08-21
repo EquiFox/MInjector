@@ -54,7 +54,7 @@
             // 
             this.targetGroupBox.Controls.Add(this.refreshBtn);
             this.targetGroupBox.Controls.Add(this.processList);
-            this.targetGroupBox.Location = new System.Drawing.Point(12, 15);
+            this.targetGroupBox.Location = new System.Drawing.Point(11, 15);
             this.targetGroupBox.Name = "targetGroupBox";
             this.targetGroupBox.Size = new System.Drawing.Size(319, 79);
             this.targetGroupBox.TabIndex = 0;
@@ -95,7 +95,7 @@
             this.settingsGroupBox.Controls.Add(this.label2);
             this.settingsGroupBox.Controls.Add(this.label1);
             this.settingsGroupBox.Enabled = false;
-            this.settingsGroupBox.Location = new System.Drawing.Point(12, 98);
+            this.settingsGroupBox.Location = new System.Drawing.Point(11, 98);
             this.settingsGroupBox.Name = "settingsGroupBox";
             this.settingsGroupBox.Size = new System.Drawing.Size(319, 198);
             this.settingsGroupBox.TabIndex = 1;
@@ -202,7 +202,7 @@
             // injectBtn
             // 
             this.injectBtn.Enabled = false;
-            this.injectBtn.Location = new System.Drawing.Point(12, 302);
+            this.injectBtn.Location = new System.Drawing.Point(11, 302);
             this.injectBtn.Name = "injectBtn";
             this.injectBtn.Size = new System.Drawing.Size(319, 44);
             this.injectBtn.TabIndex = 8;
@@ -216,7 +216,7 @@
             this.aboutLbl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.aboutLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aboutLbl.ForeColor = System.Drawing.Color.Blue;
-            this.aboutLbl.Location = new System.Drawing.Point(302, 4);
+            this.aboutLbl.Location = new System.Drawing.Point(301, 4);
             this.aboutLbl.Name = "aboutLbl";
             this.aboutLbl.Size = new System.Drawing.Size(30, 12);
             this.aboutLbl.TabIndex = 9;
@@ -227,13 +227,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(345, 352);
+            this.ClientSize = new System.Drawing.Size(341, 352);
             this.Controls.Add(this.aboutLbl);
             this.Controls.Add(this.injectBtn);
             this.Controls.Add(this.settingsGroupBox);
             this.Controls.Add(this.targetGroupBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MInjector - By EquiFox";

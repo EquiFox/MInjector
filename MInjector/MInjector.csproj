@@ -105,5 +105,11 @@
   <ItemGroup>
     <Content Include="foxIcon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MInject\MInject\MInject.vcxproj">
+      <Project>{284f1200-c40a-42df-b85d-d34d972b907d}</Project>
+      <Name>MInject</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

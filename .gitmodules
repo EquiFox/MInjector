@@ -1,0 +1,3 @@
+[submodule "MInject"]
+	path = MInject
+	url = https://github.com/EquiFox/MInject.git

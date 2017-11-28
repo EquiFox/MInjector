@@ -12,6 +12,7 @@ namespace MInjector
         {
             InitializeComponent();
             RefreshMonoProcesses();
+            Text += !Environment.Is64BitProcess ? " (x86)" : " (x64)";
         }
 
         private void refreshBtn_Click(object sender, EventArgs e)

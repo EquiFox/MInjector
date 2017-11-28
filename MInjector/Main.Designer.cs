@@ -37,7 +37,6 @@
             this.loadAsmBtn = new System.Windows.Forms.Button();
             this.asmPathTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.hideAssemblyCheck = new System.Windows.Forms.CheckBox();
             this.methodTxtBox = new System.Windows.Forms.TextBox();
             this.classTxtBox = new System.Windows.Forms.TextBox();
             this.namespaceTxtBox = new System.Windows.Forms.TextBox();
@@ -87,7 +86,6 @@
             this.settingsGroupBox.Controls.Add(this.loadAsmBtn);
             this.settingsGroupBox.Controls.Add(this.asmPathTextBox);
             this.settingsGroupBox.Controls.Add(this.label4);
-            this.settingsGroupBox.Controls.Add(this.hideAssemblyCheck);
             this.settingsGroupBox.Controls.Add(this.methodTxtBox);
             this.settingsGroupBox.Controls.Add(this.classTxtBox);
             this.settingsGroupBox.Controls.Add(this.namespaceTxtBox);
@@ -97,7 +95,7 @@
             this.settingsGroupBox.Enabled = false;
             this.settingsGroupBox.Location = new System.Drawing.Point(11, 98);
             this.settingsGroupBox.Name = "settingsGroupBox";
-            this.settingsGroupBox.Size = new System.Drawing.Size(319, 198);
+            this.settingsGroupBox.Size = new System.Drawing.Size(319, 181);
             this.settingsGroupBox.TabIndex = 1;
             this.settingsGroupBox.TabStop = false;
             this.settingsGroupBox.Text = "Settings";
@@ -139,17 +137,6 @@
             this.label4.Size = new System.Drawing.Size(54, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "Assembly:";
-            // 
-            // hideAssemblyCheck
-            // 
-            this.hideAssemblyCheck.AutoSize = true;
-            this.hideAssemblyCheck.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hideAssemblyCheck.Location = new System.Drawing.Point(34, 173);
-            this.hideAssemblyCheck.Name = "hideAssemblyCheck";
-            this.hideAssemblyCheck.Size = new System.Drawing.Size(251, 17);
-            this.hideAssemblyCheck.TabIndex = 7;
-            this.hideAssemblyCheck.Text = "Hide from GetAssemblies Method (Experimental)";
-            this.hideAssemblyCheck.UseVisualStyleBackColor = true;
             // 
             // methodTxtBox
             // 
@@ -202,7 +189,7 @@
             // injectBtn
             // 
             this.injectBtn.Enabled = false;
-            this.injectBtn.Location = new System.Drawing.Point(11, 302);
+            this.injectBtn.Location = new System.Drawing.Point(11, 285);
             this.injectBtn.Name = "injectBtn";
             this.injectBtn.Size = new System.Drawing.Size(319, 44);
             this.injectBtn.TabIndex = 8;
@@ -227,7 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 352);
+            this.ClientSize = new System.Drawing.Size(341, 336);
             this.Controls.Add(this.aboutLbl);
             this.Controls.Add(this.injectBtn);
             this.Controls.Add(this.settingsGroupBox);
@@ -252,7 +239,6 @@
         private System.Windows.Forms.Button refreshBtn;
         private System.Windows.Forms.ComboBox processList;
         private System.Windows.Forms.GroupBox settingsGroupBox;
-        private System.Windows.Forms.CheckBox hideAssemblyCheck;
         private System.Windows.Forms.TextBox methodTxtBox;
         private System.Windows.Forms.TextBox classTxtBox;
         private System.Windows.Forms.TextBox namespaceTxtBox;

@@ -82,7 +82,6 @@ namespace MInjector
                 ClassName = classTxtBox.Text,
                 MethodName = methodTxtBox.Text,
                 HideAssemblyLoad = hideAssemblyLoadCheck.Checked,
-                HideGetAssemblies = hideAssemblyCheck.Checked
             };
 
             if (MonoInjector.Inject(printableProcess.InternalProcess, injectionSettings))
@@ -97,7 +96,6 @@ namespace MInjector
                 namespaceTxtBox.Text = "";
                 classTxtBox.Text = "";
                 methodTxtBox.Text = "";
-                hideAssemblyCheck.Checked = false;
                 RefreshMonoProcesses();
             }
         }

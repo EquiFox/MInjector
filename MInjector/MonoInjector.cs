@@ -29,11 +29,6 @@ namespace MInjector
                     IntPtr classPointer = monoProcess.ClassFromName(assemblyImage, p_InjectionSettings.Namespace, p_InjectionSettings.ClassName);
                     IntPtr methodPointer = monoProcess.ClassGetMethodFromName(classPointer, p_InjectionSettings.MethodName);
 
-                    if (p_InjectionSettings.HideGetAssemblies)
-                    {
-                        monoProcess.HideLastAssembly(monoDomain);
-                    }
-
                     monoProcess.RuntimeInvoke(methodPointer);
 
                     if (p_InjectionSettings.HideAssemblyLoad)
@@ -61,8 +56,6 @@ namespace MInjector
             public string MethodName { get; set; }
 
             public bool HideAssemblyLoad { get; set; }
-
-            public bool HideGetAssemblies { get; set; }
         }
     }
 }
